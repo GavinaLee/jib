@@ -31,7 +31,7 @@ public class Image<T extends Layer> {
   public static class Builder<T extends Layer> {
 
     private final ImageLayers.Builder<T> imageLayersBuilder = ImageLayers.builder();
-    private ImmutableMap.Builder<String, String> environmentBuilder = ImmutableMap.builder();
+    private final ImmutableMap.Builder<String, String> environmentBuilder = ImmutableMap.builder();
 
     @Nullable private Instant created;
     @Nullable private ImmutableList<String> entrypoint;
